@@ -29,6 +29,8 @@ GOOGLE_TOKEN_ENDPOINT = "https://oauth2.googleapis.com/token"
 GOOGLE_USERINFO_ENDPOINT = "https://www.googleapis.com/oauth2/v2/userinfo"
 
 
+# Below endpoint can be used for health check
+
 @app.get("/")
 async def healthcheck():
     return {"status": "ok"}
