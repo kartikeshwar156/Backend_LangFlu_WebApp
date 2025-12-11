@@ -1,7 +1,8 @@
 # Enable auto reviews
 reviews:
   review_status: true
-  auto_review: true
+  auto_review:
+    enabled: true
 
 # Optional: customize review rules
 rules:
