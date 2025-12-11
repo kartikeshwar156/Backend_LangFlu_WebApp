@@ -1,0 +1,9 @@
+# Enable auto reviews
+reviews:
+  review_status: true
+  auto_review: true
+
+# Optional: customize review rules
+rules:
+  - type: "auto"
+    description: "Automatic CodeRabbit review"
