@@ -4,7 +4,3 @@ reviews:
   auto_review:
     enabled: true
 
-# Optional: customize review rules
-rules:
-  - type: "auto"
-    description: "Automatic CodeRabbit review"
