@@ -47,7 +47,7 @@ def login():
     url = f"{GOOGLE_AUTH_ENDPOINT}?{urlencode(query_params)}"
     return RedirectResponse(url)
 
-
+# call back url called by google to redirect to required frontend
 @app.get("/auth/callback")
 async def auth_callback(request: Request):
     code = request.query_params.get("code")
