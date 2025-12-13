@@ -28,7 +28,7 @@ load_dotenv(dotenv_path=env_path)
 ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "*").split(",")
 
 GEMINI_API_KEY = os.getenv(
-    "GEMINI_API_KEY", "AIzaSyBdiqUXMqxD2zbryYKSdAI5K65YcNPKg6M")
+    "GEMINI_API_KEY", "AIzaSyABCwnvWjXNN8uOtEH5zSWesc5b1a4u6Xs")
 GEMINI_API_MODEL = os.getenv("GEMINI_API_MODEL", "models/gemini-flash-latest")
 
 GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID")
@@ -142,7 +142,7 @@ async def ask_response(user_request: ConversationRequest):
         Only return the JSON, nothing else.
         """
 
-        client = genai.Client(api_key=GEMINI_API_KEY)
+        client = genai.Client(api_key="AIzaSyABCwnvWjXNN8uOtEH5zSWesc5b1a4u6Xs")
         final_response = client.models.generate_content(
             model=GEMINI_API_MODEL,
             contents=final_query
