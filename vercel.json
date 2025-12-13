@@ -3,7 +3,7 @@
   "outputDirectory": ".",
   "functions": {
     "responseApp.py": {
-      "runtime": "python3.13.7"
+      "runtime": "python@3.13.7"
     }
   }
 }
