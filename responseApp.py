@@ -4,7 +4,7 @@ from urllib.parse import urlencode
 import logging
 
 import httpx
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import RedirectResponse
 import uvicorn
@@ -21,8 +21,8 @@ logger = logging.getLogger(__name__)
 
 
 # Load .env variables from the repo-local file so development works out of the box.
-env_path = Path(__file__).resolve().parent / ".env"
-load_dotenv(dotenv_path=env_path)
+# env_path = Path(__file__).resolve().parent / ".env"
+# load_dotenv(dotenv_path=env_path)
 
 # CORS Configuration
 ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "*").split(",")
