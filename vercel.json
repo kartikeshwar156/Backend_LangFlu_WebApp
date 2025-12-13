@@ -1,9 +1,0 @@
-{
-  "buildCommand": "pip install -r requirements.txt",
-  "outputDirectory": ".",
-  "functions": {
-    "responseApp.py": {
-      "runtime": "python@3.13.7"
-    }
-  }
-}
