@@ -28,7 +28,7 @@ logger = logging.getLogger(__name__)
 ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "*").split(",")
 
 GEMINI_API_KEY = os.getenv(
-    "GEMINI_API_KEY", "AIzaSyABCwnvWjXNN8uOtEH5zSWesc5b1a4u6Xs")
+    "GEMINI_API_KEY", "AIzaSyBlivgJBerX6cclL5fI3GanB3297oNomJg")
 GEMINI_API_MODEL = os.getenv("GEMINI_API_MODEL", "models/gemini-flash-latest")
 
 GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID")
