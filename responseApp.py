@@ -143,7 +143,7 @@ async def ask_response(user_request: ConversationRequest):
         """
 
         client = genai.Client(
-            api_key="AIzaSyABCwnvWjXNN8uOtEH5zSWesc5b1a4u6Xs")
+            api_key=GEMINI_API_KEY)
         final_response = client.models.generate_content(
             model=GEMINI_API_MODEL,
             contents=final_query
