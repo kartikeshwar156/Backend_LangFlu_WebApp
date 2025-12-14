@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 
 
 # Load .env variables from the repo-local file so development works out of the box.
-# env_path = Path(__file__).resolve().parent / ".env"
+# env_path = Path(__file__).resolve().parent.parent / ".env"
 # load_dotenv(dotenv_path=env_path)
 
 # CORS Configuration
@@ -142,7 +142,8 @@ async def ask_response(user_request: ConversationRequest):
         Only return the JSON, nothing else.
         """
 
-        client = genai.Client(api_key="AIzaSyABCwnvWjXNN8uOtEH5zSWesc5b1a4u6Xs")
+        client = genai.Client(
+            api_key="AIzaSyABCwnvWjXNN8uOtEH5zSWesc5b1a4u6Xs")
         final_response = client.models.generate_content(
             model=GEMINI_API_MODEL,
             contents=final_query
